@@ -1,0 +1,128 @@
+
+
+
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.jumbotron img{
+	float: left;
+}
+
+li {
+    float: left;
+    width: 25%;
+}
+ul .active {
+    background-color: #131DAF;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} 
+header .jumbotron h1{
+	display:inline;
+	text-align: center;
+	font-size: 10rem;
+	font-family: sans-serif;
+	font-style: bold;
+	color: white;
+	line-height: 40%
+
+}
+header .jumbotron {
+	background-image: url("Harbor.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+header .jumbotron h3{
+		float: left;
+		clear: both;
+		text-align: left;
+		line-height: 30%;
+		color:white;
+	}
+.myClass{
+	margin: 0em 1em;
+	padding:.75em;
+	border: 1px solid black;
+	border-radius: .25%;
+
+	/* Safari and Chrome */	
+	-webkit-column-count:3;
+	-moz-column-count: 3;
+	column-count:3;
+} 
+
+footer{
+	background-color: blue;
+}
+footer img{
+	height: 5%;
+	width: 5%;
+}
+footer p{
+	color:white;
+}
+
+
+@media only screen and (min-width: 760px){
+	body{
+		background-color:white;
+	}
+}
+@media only screen and (min-width: 1024px){
+	body{
+		background-color:#0691A2 ;
+	}
+	
+	.jumbotron h3{
+		float: right;
+		clear:right;
+		text-align: right;
+		line-height: 30%;
+	}
+	img { 
+		float: left;
+		width: 15%;
+		height: 25%;
+	}
+	#left{
+		width: 40%;
+		float:right;
+	}
+	#left ol{
+		border: solid 3px black;
+	}
+	#center{
+		width:60%;
+		float:left;
+	}
+	.myClass {
+		border: solid 3px black;
+	}
+	footer{
+		border:none;
+	}
+}
+@media only screen and (min-width: 760px){
+	body{
+		background-color:white;
+	}
+}
