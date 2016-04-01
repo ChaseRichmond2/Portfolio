@@ -1,3 +1,8 @@
+body{
+	background-color: #4E2B84;
+}
+
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -32,17 +37,23 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 } 
-header .jumbotron h1{
+div .jumbotron h1{
 	display:inline;
 	text-align: center;
-	font-size: 10rem;
-	font-family: sans-serif;
-	font-style: bold;
+	font-size: 600%;
+	font-weight: 400;
+	font-family: serif;
 	color: white;
-	line-height: 40%
+	line-height: 125%;
 
 }
-header .jumbotron {
+div .jumbotron h3{
+	visibility: hidden;
+}
+div.jumbotron h2{
+	visibility: hidden;
+}
+div .jumbotron {
 	background-image: url("Harbor.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -52,12 +63,6 @@ header .jumbotron {
 	margin-bottom: 0;
 }
 
-header .jumbotron h3{
-	clear: both;
-	text-align: center;
-	line-height: 100%;
-	color:white;
-}
 .myClass{
 	margin: 0em 1em;
 	padding:.75em;
@@ -82,41 +87,34 @@ footer p{
 }
 
 
-@media only screen and (min-width: 760px){
+@media screen and (min-width: 700px){
 	body{
 		background-color:white;
 	}
+	div .jumbotron h2{
+		visibility: visible;
+		line-height: 200%;
+    	color: #84E9F5;
+    	font-size: 250%;
+	}
 }
-@media only screen and (min-width: 1024px){
+
+@media screen and (min-width: 1024px){
 	body{
 		background-color:#0691A2 ;
 	}
-	
-	img { 
-		float: left;
-		width: 15%;
-		height: 25%;
+	div .jumbotron h2{
+		line-height: 100%
 	}
-	#left{
-		width: 40%;
-		float:right;
-	}
-	#left ol{
-		border: solid 3px black;
-	}
-	#center{
-		width:60%;
-		float:left;
-	}
-	.myClass {
-		border: solid 3px black;
+	div .jumbotron h3{
+		visibility: visible;
+		clear: both;
+		text-align: left;
+		line-height: 200%;
+		color:white;
 	}
 	footer{
 		border:none;
 	}
 }
-@media only screen and (min-width: 760px){
-	body{
-		background-color:white;
-	}
-}
+
