@@ -15,14 +15,41 @@ div .jumbotron h1{
 }
 
 .nav {
-		min-height: 40px;
-		position: relative;
-	}	
+	min-height: 40px;
+	position: relative;
+	padding-bottom: 500px;
+	}
+.collapse ul{
+	width: 100px;
+	padding: 5px 0;
+	left: 0;
+	border: solid 1px #aaa;
+	background: #333 10px 11px;
+}
+.collapse li a{
+	color:white;
+}
+.collapse ul .active {
+	background-color:blue;
+	}
+.collapse a:hover:not(.active) {
+    background-color: black;
+ 	text-decoration: none;
+	}
+.navbar{
+	position: absolute;
+	top: 0;
+}
+.collapse{
+	position: absolute;
+	top: 20px;
+}
+
+		
 .nav ul {
 		width: 200px;
 		padding: 5px 0;
 		position: absolute;
-		top: 0;
 		left: 0;
 		border: solid 1px #aaa;
 		background: #333 10px 11px;
@@ -97,7 +124,8 @@ footer p{
 }
 
 
-@media screen and (min-width: 700px){
+
+@media screen and (min-width: 768px){
 	body{
 		background-color:white;
 	}
@@ -120,7 +148,7 @@ footer p{
 	.nav li {
 		display: initial;
     	float: left;
-    	width: 25%;
+    	width: 100%;
 	}
 	.nav ul .active {
     	background-color: #131DAF;
@@ -153,7 +181,7 @@ footer p{
 		line-height: 200%;
 		color:white;
 	}
-	nav li {
+	.nav li {
 		display: initial;
     	float: left;
     	width: 25%;
@@ -162,4 +190,6 @@ footer p{
 		border:none;
 	}
 }
+
+
 
