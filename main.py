@@ -11,26 +11,29 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+        logging.info("GET")
         logging.info(self.request.path)
-    	template = JINJA_ENVIRONMENT.get_template('templates/index.html')
-    	self.response.write(template.render({'title':'Index','Greeting':'Hello, My name is'}))
-class ExperienceHandler(webapp2.RequestHandler):
-    def get(self):
-        template = JINJA_ENVIRONMENT.get_template('templates/experience.html')
-        self.response.write(template.render({'title':'Experience'}))
-class GalleryHandler(webapp2.RequestHandler):
-    def get(self):
-        template = JINJA_ENVIRONMENT.get_template('templates/gallery.html')
-        self.response.write(template.render({'title':'Gallery'}))
-class ContactHandler(webapp2.RequestHandler):
-	def get(self):
-		template = JINJA_ENVIRONMENT.get_template('templates/contact.html')
-		self.response.write(template.render({'title':'Contact'}))
+        try:
+            path=self.request.path
+            template = JINJA_ENVIRONMENT.get_template('templates%s'%path)
+            if path == '/':
+                self.response.write(template.render({'title':'Index'}))
+            elif path == '/experience.html':
+                self.response.write(template.render({'title':'Experience'}))
+            elif path == '/gallery.html':
+                self.response.write(template.render({'title':'Gallery'}))
+            elif path == 'contact.html':
+                self.response.write(template.render({'title':'Contact'}))
+            else:
+                self.response.write(template.render({'title':'Index'}))
+        except:
+            template = JINJA_ENVIRONMENT.get_template('templates/index.html')
+            self.response.write(template.render({'title':'Index'}))
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/index.html', MainHandler),
-    ('/experience.html', ExperienceHandler),
-    ('/gallery.html', GalleryHandler),
-    ('/contact.html',ContactHandler)
+    ('/experience.html', MainHandler),
+    ('/gallery.html', MainHandler),
+    ('/contact.html',MainHandler)
 
 ], debug=True)
