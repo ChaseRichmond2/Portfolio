@@ -6,5 +6,13 @@
 {%endblock%}
 
 {% block content %}
+<form>
+    <label> Name: <input type='text' id = 'name' name = 'name' placeholder = 'John Doe'></label><br/>
+    <label>Email: <input type='email' name = 'email' placeholder="johndoe@aol.com"></label><br/>
+    <input type='submit' value='Submit'>
+</form> 
 
 {% endblock %}
+
+self.request.get('name')
+self.request.get('email')
