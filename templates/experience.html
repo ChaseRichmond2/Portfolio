@@ -7,15 +7,59 @@
 
 
 {% block content %}
-<nav class="nav">
-    <ul>
-		<li><a href="index.html">Home</a></li>
-  		<li><a class="active" href="experience.html">Experience</a></li>
-  		<li><a href="gallery.html">Gallery</a></li>
-  		<li><a href="contact.html">Contact</a></li>
-  	</ul>
-</nav>
-	<p>
-		My family lives in Traverse City, Michigan. I come from a family of five people: myself, my parents, and my 2 brothers.
-	</p>
-	{% endblock %}
+<div class="content">
+	<h2>Professional Highlights</h2>
+	<section class="Work">
+		<h2>Work Experience</h2>
+		<h3>University Lacrosse</h3>
+			<details>
+				<summary> League Manager </summary>
+					<ul>
+						<li>Do boss shit</li>
+					</ul>
+			</details>
+	</section>
+	<section class= "Education">
+		<h2>University of Michigan</h2>
+			<h4>Bachelor of Science of Information</h4>
+			<h4>Minors: Applied Statistics and Earth Science</h4>
+		<details>
+				<summary> GPA</summary>
+					<ul>
+						<li>3.57/4.0</li>
+					</ul>
+	</section>
+	<section class= "Courses">
+		<h2>Course Highlights</h2>
+		<details>
+			<summary>Information Analysis</summary>
+				<ul>
+					<li>Introduction to Python Programming</li>
+					<li>Econometrics</li>
+					<li>Agile Web Design</li>
+				</ul>
+			<summary>Applied Statistics</summary>
+				<ul>
+					<li>Introduction to Statistics and Data Analysis</li>
+					<li>Regression Analysis</li>
+					<li>Statistical Problem Solving: A systems approach</li>
+				</ul>
+			<summary>Earth Science</summary>
+				<ul>
+					<li>Enviromental Geology</li>
+					<li>Earths Surface and Sediments</li>
+					<li>Climate Change</li>
+				</ul>
+		</details>
+	</section>
+	<section class= "Clubs">
+		<h2>Campus Inolvement</h2>
+			<h4>Financial Investment Group</h4>
+				<li>Head of Industrial Sector</li>
+			<h4>Detroit Partnership</h4>
+				<li>Studnet Mentor</li>
+			<h4>Phi Delta Theta International Fraternity</h4>
+	</section>
+</div>
+
+{% endblock %}
