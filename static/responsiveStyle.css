@@ -20,11 +20,19 @@ header .jumbotron h1{
 	border: solid 1px #aaa;
 	background: #333 10px 11px;
 }
+section.Story{
+		display:inline-block;
+		width: 70%;
+	}
+img#mich{
+		width: 25%;
+		float: left;
+	}
 .collapse li a{
 	color:white;
 }
-.collapse ul .active {
-	background-color:blue;
+.active {
+    background-color: blue;
 	}
 .collapse a:hover:not(.active) {
     background-color: black;
@@ -34,6 +42,7 @@ header .jumbotron h1{
 	position: absolute;
 	top: 0;
 	visibility: visible;
+	min-height: 0px;
 }
 .collapse{
 	position: absolute;
@@ -46,7 +55,7 @@ header .jumbotron h1{
 	display:none;
 }
 .nav{
-	visibility: none;
+	visibility: hidden;
 }
 .collapsing li{
 	visibility: hidden;
@@ -66,8 +75,34 @@ header .jumbotron {
 header .jumbotron{
 	margin-bottom: 0;
 }
-.content section{	
-	display: inline-block;
+.Home section {
+	font-family: "Noto Sans", sans-serif;
+	font-size: 15px;
+	background-color: rgb(235, 235, 255);
+	padding: 1% 2%;
+	line-height: 20px;
+	border: 2px solid rgb(67, 67, 76);
+	border-radius: 5px;
+	margin: .8%;
+	border: 2px solid rgb(67, 67, 76);
+	border-radius: 5px;
+	margin-top: 60px;
+	background-color: rgb(235, 235, 255);
+	padding: 1% 2%;
+	line-height: 20px;
+}
+
+img#TC{
+		width: 100%;
+	}
+
+.resume h1{
+	color: white;
+	text-align: center;
+}
+
+.resume section{	
+	display: block;
 	margin: .8%;
 	border: 5px solid rgb(67, 67, 76);
 	border-radius: 5px;
@@ -75,9 +110,14 @@ header .jumbotron{
 	padding: 1% 2%;
 	line-height: 20px;
 }
-.content h4{
-	font-style: italic;
+.resume h3{
+	font-weight: 200;
+
 }
+h4#italic {
+	font-style: italic;
+	}
+
 footer{
 	background-color: black;
     text-align: center;
@@ -97,7 +137,7 @@ form{
 	border-radius: 5px;
 }
 
-
+/* Tablet MEDIA QUERY */
 @media screen and (min-width: 768px){
 	body{
 		background-color:white;
@@ -108,8 +148,21 @@ form{
     	color: #84E9F5;
     	font-size: 250%;
 	}
+	section.Roots{
+		display: inline-block;
+		width:40%;
+	}
+	img#mich{
+		height: 240px;
+	}
+	img#TC{
+		width: 55%;
+		float: right;
+	}
+	.resume section{	
+		display: inline-block;
+	}
 	.nav {
-		min-height: 40px;
 		position: relative;
 	}
 	.nav{
@@ -139,8 +192,8 @@ form{
     	float: left;
     	width: 100%;
 	}
-	.nav ul .active {
-    	background-color: #131DAF;
+	.active {
+    	background-color: blue;
 	}
 
 	.nav li a:hover:not(.active) {
@@ -154,14 +207,34 @@ form{
     	padding: 14px 16px;
     	text-decoration: none;
 	} 
+	section.Courses{
+		top:0;
+	}
 }
-
+/* Desktop MEDIA QUERY */
 @media screen and (min-width: 1024px){
 	body{
 		background-color:#0691A2 ;
 	}
 	header .jumbotron h2{
 		line-height: 100%
+	}
+	section.Education{
+		display: block;
+	}
+	section.Skills{
+		display: block;
+		width: 350px;
+	}
+	img#mich{
+		height: 220px;
+		float: right;
+	}
+	section.Clubs{
+		width: 30%;
+	}
+	section.Courses{
+		top:0;
 	}
 	header .jumbotron h3{
 		visibility: visible;

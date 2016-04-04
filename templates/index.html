@@ -3,16 +3,29 @@
 {%block head%}
 <title>{{'title'}}</title>
 {%endblock%}
+
+{% block nav1%}
+<li><a class="active" href="index.html">Home</a></li>
+{% endblock %}
+
+{% block nav5%}
+<li><a class="active" href="index.html">Home</a></li>
+{% endblock %}
+
+
 {% block content %}
 
+
 <div class="Home">
-	<section class="Background">
-		<h2>My Background</h2>
-			<p> Hello, I am Chase! I am a junior at the University of Michigan pursuing a Bachelors of Science in Information (BSI) degree. Within the School of Information I am focusing on Information Analysis. Outside of the School of Information, I am working towards minors in Earth Science and Applied statistics <p>
+	<section class="Story">
+		<h2>Academic Background</h2>
+			<p> Hello, I am Chase! I am a junior at the University of Michigan in the a Bachelors of Science in Information program. Within the School of Information I am focusing on Information Analysis. Outside of the School of Information, I am also pursuing minors in Earth Science and Applied statistics <p>
 	</section>
-	<section class="Home">
-		<h2>Hometown</h2>
-		<p> My hometown is a beautiful place in Northern Michigan called Traverse City.</p>
+		<img id="mich" src= "static/logo.png" alt= "University of Michigan logo">
+	<section class="Roots">
+		<h2>My Story</h2>
+		<p> I come from a family of five, with two brothers. I was raised in a beautiful town in Northern Michigan called Traverse City. Traverse City is a great place to do anything outdoors. It has been an ideal place for me to practice my hobbies of Fly Fishing, Skeet Shooting and Golf.  </p>
 	</section>
+		<img id="TC" src= "static/TC.jpg" alt= "Traverse City, Michigan">
 </div>
 {%endblock%}

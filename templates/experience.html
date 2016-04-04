@@ -5,23 +5,21 @@
 
 {%endblock%}
 
+{%block nav2 %}
+  	<li><a class="active" href="experience.html">Experience</a></li>
+{%endblock%}
+
+{%block nav6%}
+  	<li><a class="active" href="experience.html">Experience</a></li>
+{%endblock%}
+
 
 {% block content %}
-<div class="content">
-	<h2>Professional Highlights</h2>
-	<section class="Work">
-		<h2>Work Experience</h2>
-		<h3>University Lacrosse</h3>
-			<details>
-				<summary> League Manager </summary>
-					<ul>
-						<li>Do boss shit</li>
-					</ul>
-			</details>
-	</section>
+<div class="resume">
+	<h1>Professional Highlights</h1>
 	<section class= "Education">
 		<h2>University of Michigan</h2>
-			<h4>Bachelor of Science of Information</h4>
+			<h4 id="italic">Bachelor of Science of Information</h4>
 			<h4>Minors: Applied Statistics and Earth Science</h4>
 		<details>
 				<summary> GPA</summary>
@@ -38,12 +36,16 @@
 					<li>Econometrics</li>
 					<li>Agile Web Design</li>
 				</ul>
+		</details>
+		<details>
 			<summary>Applied Statistics</summary>
 				<ul>
 					<li>Introduction to Statistics and Data Analysis</li>
 					<li>Regression Analysis</li>
 					<li>Statistical Problem Solving: A systems approach</li>
 				</ul>
+		</details>
+		<details>
 			<summary>Earth Science</summary>
 				<ul>
 					<li>Enviromental Geology</li>
@@ -52,6 +54,33 @@
 				</ul>
 		</details>
 	</section>
+	<section class="Work">
+		<h2>Work Experience</h2>
+		<h3>University Lacrosse</h3>
+			<details>
+				<summary> League Manager &amp; Co-Founder </summary>
+					<ul>
+						<li> Collaberated with a student partner to establish a for-profit lacrosse league in Ann Arbor designed to provide competition for college-aged and post-graduate students.</li>
+ 						<li>Created and implemented a full scale marketing plan aimed at maximizing participation</li>
+					</ul>
+			</details>
+		<h3>Michigan State University</h3>
+			<details>
+				<summary>Agricultural Research Intern</summary>
+					<ul>
+						<li> Utilized Excel data to interpret the viability of pesticide treatments on the Hop plant. </li>
+						<li>Analyzed data to assess the growth potential of different Hop breeds in the Northern Michigan climate.</li>
+					</ul>
+			</details>
+		<h3>University of Michigan Health System</h3>
+			<details>
+				<summary>Web Development Intern</summary>
+					<ul>
+						<li>Summer 2016</li>
+					</ul>
+			</details>
+
+	</section>
 	<section class= "Clubs">
 		<h2>Campus Inolvement</h2>
 			<h4>Financial Investment Group</h4>
@@ -59,6 +88,20 @@
 			<h4>Detroit Partnership</h4>
 				<li>Studnet Mentor</li>
 			<h4>Phi Delta Theta International Fraternity</h4>
+	</section>
+	<section class= "Skills">
+		<h2>Skills</h2>
+		<br>
+			<p>Stata(85%)<progress value="85" max="100"></progress></p>
+			<p>R(80%)<progress value="80" max="100"></progress></p>
+			<p>HTML (65%)<progress value="65" max="100"></progress></p>
+			<p>Spanish (70%)<progress value="70" max="100"></progress></p>
+			<p>CSS (60%)<progress value="60" max="100"></progress></p>
+			<p>Python (75%)<progress value="75" max="100"></progress></p>
+			<p>Excel(80%)<progress value="80" max="100"></progress></p>
+			<p>Leadership(90%)<progress value="90" max="100"></progress></p>
+			<p>Communication(95%)<progress value="95" max="100"></progress></p>
+			<p>Spanish (70%)<progress value="70" max="100"></progress></p>
 	</section>
 </div>
 
