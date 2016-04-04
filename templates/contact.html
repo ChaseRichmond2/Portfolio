@@ -1,6 +1,39 @@
 {%extends "templates/base.html" %}
 {%block head%}
+<script type="text/javascript">
+function fillHidTable(){
+    var htqf; //-- hidden field
+    var rf; //-- retrieved field
+    for ( var i = 1; i < 5; i++ ) {
+        rf = "htqf"+i;
+        document.getElementById(rf).innerHTML = document.getElementById("Q"+i+"CALC").value;
+    }
+    tableToExcel('hidTable', 'Analysis Results');
+}
 
+var tableToExcel = (function() {
+    var uri = 'data:application/vnd.ms-excel;base64,'
+            , template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>'
+            , base64 = function(s) { return window.btoa(unescape(encodeURIComponent(s))) }
+            , format = function(s, c) { return s.replace(/{(\w+)}/g, function(m, p) { return c[p]; }) }
+    return function(table, name) {
+        if (!table.nodeType) table = document.getElementById(table)
+        var ctx = {worksheet: name || 'Worksheet', table: table.innerHTML}
+        window.location.href = uri + base64(format(template, ctx))
+    }
+})()
+</script>
+
+<title>HTML Form Data to Excel</title>
+
+<style type="text/css" media="screen">
+    .divCenMid{font-family:Arial,sans-serif;font-size:14pt;font-style:normal;font-weight:700;text-align:center;vertical-align:middle;margin:0;}
+    .allbdrCenMid{border:.75pt solid windowtext;color:#000;font-family:Arial,sans-serif;font-size:10pt;font-style:normal;font-weight:400;text-align:center;vertical-align:middle;margin:0;}
+    .allbdrCenTop{border:.75pt solid windowtext;color:#000;font-family:Arial,sans-serif;font-size:10pt;font-style:normal;font-weight:400;text-align:center;vertical-align:top;margin:0;}
+    .allbdrLtMid{border:.75pt solid windowtext;color:#000;font-family:Arial,sans-serif;font-size:10pt;font-style:normal;font-weight:400;text-align:left;vertical-align:middle;margin:0;}
+    .allbdrLtTop{border:.75pt solid windowtext;color:#000;font-family:Arial,sans-serif;font-size:10pt;font-style:normal;font-weight:400;text-align:left;vertical-align:top;margin:0;}
+
+</style>
 {%endblock%}
 
 {%block nav4%}
@@ -12,11 +45,33 @@
 {%endblock%}
 
 {% block content %}
-<form>
-    <label> Name: <input type='text' id = 'name' name = 'name' placeholder = 'John Doe'></label><br/>
-    <label>Email: <input type='email' name = 'email' placeholder="johndoe@aol.com"></label><br/>
-    <input type='submit' value='Submit'>
-</form> 
+<h2>Contact Info!</h2>
+<div class="Contact">
+	<section class="Email">
+		<div class="icon">
+			<i class="material-icons">email</i>
+		</div>
+		<div class="text">
+				<h2>Email</h2>
+				<br>
+				<p> chniri@umich.edu</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 {% endblock %}
 

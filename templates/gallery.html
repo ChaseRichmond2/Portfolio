@@ -1,8 +1,5 @@
 {%extends "templates/base.html" %}
 {%block head%}
-		
-		<h1>{{'title'}}</h1>
-
 {%endblock%}
 {%block nav3%}
   	<li><a class="active" href="gallery.html">Gallery</a></li>
@@ -23,62 +20,79 @@
     <li data-target="#myCarousel" data-slide-to="4"></li>
     <li data-target="#myCarousel" data-slide-to="5"></li>
     <li data-target="#myCarousel" data-slide-to="6"></li>
+    <li data-target="#myCarousel" data-slide-to="7"></li>
+    <li data-target="#myCarousel" data-slide-to="8"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="static/Greg.jpg" alt="Santa Barbara">
+      <img src="static/MSU.jpg" alt="Graduation">
       <div class="carousel-caption">
-        <h3>California</h3>
-        <p>My Dad and Brother in downtown Santa Barbara.</p>
-      </div>
-    </div>
-
-    <div class="item">
-      <img src="static/Chicago.jpg" alt="Chicago">
-      <div class="carousel-caption">
-        <h3>Chicago</h3>
-        <p>Me and a few freinds at Lollapalooza in Chicago.</p>
+        <h3>Graduation</h3>
+        <p>My family and I at my brothers college graduation</p>
       </div>
     </div>
 
     <div class="item">
       <img src="static/Canyon.jpg" alt="Hoover Dam">
       <div class="carousel-caption">
-        <h3>Nevada</h3>
-        <p>An Overveiw of the impressive Hoover Dam.</p>
+        <h3>Hoover Dam</h3>
+        <p>An overveiw photo I took of the Hoover Dam.</p>
       </div>
     </div>
 
     <div class="item">
-      <img src="static/Red.jpg" alt="Red Rock Canyon">
+      <img src="static/Red.jpg" alt="Red Rock">
       <div class="carousel-caption">
-        <h3>Las Vegas</h3>
-        <p>Red Rock Canyon outside of Las Vegas.</p>
+        <h3>Red Rock</h3>
+        <p>The Red Rock National Park just outside of Las Vegas.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="static/Bellagio.jpg" alt="Bellagio Casino">
+      <div class="carousel-caption">
+        <h3>Bellagio</h3>
+        <p>The famous Bellagio casino in Las Vegas.</p>
       </div>
     </div>
 	<div class="item">
-      <img src="static/sleeping-bear.jpg" alt="Sleeping Bear Dunes">
+      <img src="static/Getty.jpg" alt="The Garden of the Getty Museum">
       <div class="carousel-caption">
-        <h3>Traverse City</h3>
-        <p>A picture at the Sleeping Bear Dunes just outside my hometown of Traverse City </p>
+        <h3>Getty Museum</h3>
+        <p>The breath-taking garden of the Getty Museum in Los Angeles</p>
       </div>
     </div>
     <div class="item">
-      <img src="static/Fall.jpg" alt="Sleeping Bear Dunes">
+      <img src="static/Pier.jpg" alt="Santa Monica Pier">
       <div class="carousel-caption">
-        <h3>Traverse City</h3>
-        <p>A picture at the Sleeping Bear Dunes just outside my hometown of Traverse City </p>
+        <h3>Santa Barbara</h3>
+        <p>A veiw of the Santa Monica pier on a cloudy March day.</p>
       </div>
     </div>
     <div class="item">
-      <img src="static/dad.jpg" alt="Red Rock">
+      <img src="static/kayak.jpeg" alt="Kayaking on Elk Lake">
       <div class="carousel-caption">
-        <h3>Las Vegas</h3>
-        <p>Me and my dad at the Red Rock canyon outside of Las Vegas</p>
+        <h3>Elk Lake</h3>
+        <p>A few friends and I kayaking on Elk Lake just outside of Traverse City</p>
       </div>
     </div>
+    <div class="item">
+      <img src="static/Riley.jpeg" alt="Sleeping Bear Dunes">
+      <div class="carousel-caption">
+        <h3>Sleeping Bear Dunes</h3>
+        <p>A view from the Sleeping Bear Dunes overlooking Lake Michigan</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="static/Waterfall.JPG" alt="Niagra Falls">
+      <div class="carousel-caption">
+        <h3>Niagra Falls</h3>
+        <p>A snapshot of Niagra Falls</p>
+      </div>
+    </div>
+
 </div>
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -91,4 +105,20 @@
   </a>
 </div>
 
+
+
+<div class="photos"> 
+    <img src="static/Christmas.jpg" /> 
+    <img src="static/Greg.jpg" /> 
+    <img src="static/Fall.jpg" />
+    <img src="static/SF.jpg" /> 
+    <img src="static/dad.jpg" /> 
+    <img src="static/prom.jpg"/>
+    <img src="static/Holly.jpg"/>
+    <img src="static/car.jpg"/>
+    <img src="static/MSU.jpg"/>
+</div>
+
+
 {% endblock %}
+

@@ -24,6 +24,13 @@ section.Story{
 		display:inline-block;
 		width: 70%;
 	}
+.carousel-inner img{
+	width:100%;
+}
+div.carousel-caption{
+	right:5%;
+	left:5%;
+}
 img#Me{
 	display: none;
 }
@@ -120,6 +127,12 @@ img#TC{
 h4#italic {
 	font-style: italic;
 	}
+.carousel-inner>.item>img{
+		height: 250px;
+	}
+div.photos{
+	display: none;
+}
 
 footer{
 	background-color: black;
@@ -138,6 +151,7 @@ footer p{
 }
 form{
 	border-radius: 5px;
+	color: black;
 }
 
 /* Tablet MEDIA QUERY */
@@ -145,18 +159,23 @@ form{
 	body{
 		background-color:white;
 	}
+	div#myCarousel{
+	}
 	header .jumbotron h2{
 		visibility: visible;
 		line-height: 200%;
     	color: #84E9F5;
     	font-size: 250%;
 	}
+	.carousel-inner>.item>img{
+		height: 330px;
+	}
 	section.Roots{
 		display: inline-block;
 		width:40%;
 	}
 	img#mich{
-		height: 240px;
+		height: 230px;
 	}
 	img#TC{
 		width: 55%;
@@ -234,8 +253,46 @@ form{
 	header .jumbotron h2{
 		line-height: 100%
 	}
+	div.photos{
+		display: inline-block;
+		width: 100%
+	}
+	.photos img{
+		width:49%;
+		height: 300px;
+	}
+	.photos img:hover {
+    	-webkit-transform: scale(1.25);
+    	-moz-transform: scale(1.25);
+    	-o-transform: scale(1.25);
+    	transform: scale(1.25);
+    	z-index: 10;
+    	-webkit-transition: all 0.5s ease-out;
+    	-moz-transition: all 0.5s ease-out;
+    	-o-transition: all 0.5s ease-out;
+    	transition: all 0.5s ease-out;
+    	padding: 10px 10px 30px 10px;
+    	background: white;
+    	border: solid 1px black;
+	}
+	.photos img:nth-of-type(9){
+    	width: 70%;
+    	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	.photos img:nth-of-type(4):hover{
+		-webkit-transform: scale(1.15);
+    	-moz-transform: scale(1.15);
+    	-o-transform: scale(1.15);
+    	transform: scale(1.15);
+    	padding: 1px 10px 30px 1px;
+	}
 	.resume section{	
 		display: inline-block;
+	}
+	div#myCarousel{
+		display: none;
 	}
 	img#mich{
 		height: 220px;
@@ -260,6 +317,8 @@ form{
 		border:none;
 	}
 }
+
+
 
 
 
