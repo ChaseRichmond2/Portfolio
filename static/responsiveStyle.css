@@ -1,5 +1,5 @@
 body{
-	background-color: #4E2B84;
+	background-color: #3247E6;
 }
 header .jumbotron .container{
 	text-align: center
@@ -17,8 +17,8 @@ header .jumbotron h1{
 	width: 100px;
 	padding: 5px 0;
 	left: 0;
-	border: solid 1px #aaa;
-	background: #333 10px 11px;
+	border: solid 1px #FFF;
+	background: #5A5A5A 10px 11px;
 }
 section.Story{
 		display:inline-block;
@@ -133,6 +133,40 @@ h4#italic {
 div.photos{
 	display: none;
 }
+.material-icons{
+	font-size: 200px;
+}
+div.Contact {
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-top: 35px;
+	}
+div.Contact{
+		display: inline-block;
+		width:100%;
+	}
+div.icon{
+		display: inline-block;
+	}
+section.Email{
+		display: inline-block;
+		width:40%;
+		padding-left: 15%;
+		float: left;
+	}
+section.Phone{
+		display: inline-block;
+		padding: 1%;
+	}
+h2#Reach{
+	text-align: center;
+    font-size: 50px;
+}
+div.text p{
+	font-size: 25px;
+}
 
 footer{
 	background-color: black;
@@ -149,22 +183,26 @@ footer img{
 footer p{
 	color:white;
 }
-form{
-	border-radius: 5px;
-	color: black;
+section.Email{
+	width: 100%;
+	padding-left: 0%;
 }
+a{
+	color:#EFF2F5;
+}
+
 
 /* Tablet MEDIA QUERY */
 @media screen and (min-width: 768px){
 	body{
-		background-color:white;
+		background-color:#17248E;
 	}
 	div#myCarousel{
 	}
 	header .jumbotron h2{
 		visibility: visible;
 		line-height: 200%;
-    	color: #84E9F5;
+    	color: #060E56;
     	font-size: 250%;
 	}
 	.carousel-inner>.item>img{
@@ -214,7 +252,7 @@ form{
     	margin: 0;
     	padding: 0;
     	overflow: hidden;
-    	background-color: #333;
+    	background-color: #424141;
     	border: 10px;
     	border-color: white;
     	width:100%;
@@ -226,7 +264,7 @@ form{
     	width: 100%;
 	}
 	.active {
-    	background-color: blue;
+    	background-color: #5171D2;
 	}
 
 	.nav li a:hover:not(.active) {
@@ -243,12 +281,26 @@ form{
 	section.Courses{
 		top:0;
 	}
-	.
+	section.Email{
+		display: inline-block;
+		width:40%;
+		padding-left: 15%;
+		float: left;
+	}
+	div.text p{
+		color: white;
+	}
+	div.text h2,h2#Reach{
+		color:#D4A30C;
+	}
+	div.icon{
+		color: white;
+	}
 }
 /* Desktop MEDIA QUERY */
 @media screen and (min-width: 1024px){
 	body{
-		background-color:#0691A2 ;
+		background-color:#1C0D56 ;
 	}
 	header .jumbotron h2{
 		line-height: 100%

@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
 	<title>Chase Richmond</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="static/responsiveStyle.css"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="static/responsiveStyle.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-{% block head%}
-{% endblock %}
 </head>
 <body>
 <header>
@@ -16,45 +15,32 @@
       <div class="container">
       	<h1> Chase Richmond</h1>
       	<h2> Welcome to my Portfolio! </h2> 
-		<h3> Email: chniri@umich.edu </h3>
+		<h3>Email: chniri@umich.edu </h3>
      </div>
     </div>
 </header>
 
 <nav class="nav">
+    {% block nav1%}
     <ul>
-    	{% block nav1%}
-		<li><a href="index.html">Home</a></li>
-		{% endblock %}
-		{%block nav2 %}
+		  <li><a href="index.html">Home</a></li>
   		<li><a href="experience.html">Experience</a></li>
-  		{%endblock%}
-  		{%block nav3%}
   		<li><a href="gallery.html">Gallery</a></li>
-  		{%endblock%}
-  		{%block nav4%}
   		<li><a href="contact.html">Contact</a></li>
-  		{%endblock%}
   </ul>
+  {% endblock %}
 </nav>
 
 <div class="collapse" id="exCollapsingNavbar">
   <div class="bg-inverse p-a-1">
-  	<ul>
-  		{% block nav5%}
+    {%block nav2%}
+  <ul>
 		<li><a href="index.html">Home</a></li>
-		{% endblock %}
-		{%block nav6%}
-  		<li><a href="experience.html">Experience</a></li>
-  		{%endblock%}
-  		{%block nav7%}
-  		<li><a href="gallery.html">Gallery</a></li>
-  		{%endblock%}
-  		{%block nav8%}
-  		<li><a href="contact.html">Contact</a></li>
-  		{%endblock%}
+  	<li><a href="experience.html">Experience</a></li>
+  	<li><a href="gallery.html">Gallery</a></li>
+  	<li><a href="contact.html">Contact</a></li>
   </ul>
-</div>
+  {%endblock%}
 </div>
 </div>
 <div class="navbar navbar-light bg-faded">
@@ -65,11 +51,11 @@
 
 {% block content %}
 {% endblock %}
-	
+
 <footer>
-<p>Check me out on Linkedin <a href= "https://www.linkedin.com/in/chase-richmond-16b1a0b2"> <img src="static/linkedin-logo.png" alt="linkedin"> </p>
+<p>Check me out on Linkedin <a href= "https://www.linkedin.com/in/chase-richmond-16b1a0b2"> <img src="static/linkedin-logo.png" alt="linkedin"/> </a>
+<br>
 Copyright &copy; Chase Richmond
 </footer>
-	
 </body>
 </html>
