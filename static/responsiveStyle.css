@@ -77,7 +77,7 @@ header .jumbotron h2{
 	visibility: hidden;
 }
 header .jumbotron {
-	background-image: url("Harbor.jpg");
+	background-image: url("https://res-5.cloudinary.com/simpleview/image/upload/c_fill,f_auto,h_720,q_50,w_2048/v1/clients/traversecity15/Good%20Harbor%20Beach_047ef4f5-be11-4b51-8e93-d50ba7b6309f.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 300px;
