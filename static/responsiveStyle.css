@@ -202,7 +202,7 @@ a{
 	header .jumbotron h2{
 		visibility: visible;
 		line-height: 200%;
-    	color: #060E56;
+    	color: #FBFBFB;;
     	font-size: 250%;
 	}
 	.carousel-inner>.item>img{
@@ -349,9 +349,6 @@ a{
 	img#mich{
 		height: 220px;
 		float: right;
-	}
-	section.Courses,section.Clubs,section.Work{
-		width: 30%;
 	}
 	header .jumbotron h3{
 		visibility: visible;
